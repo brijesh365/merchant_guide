@@ -12,3 +12,7 @@ class InvalidMetal(Exception):
 
 class InvalidCost(Exception):
     pass
+
+
+class InvalidCurrencyRule(Exception):
+    pass
