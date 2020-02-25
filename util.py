@@ -1,9 +1,9 @@
 import exception
 
 SUBTRACTION_RULES = {
-    frozenset((1,)): (set([5, 10]), '"I" can be subtracted from "V" and "X" only'),
-    frozenset((10,)): (set([50, 100]),  '"X" can be subtracted from "L" and "C" only'),
-    frozenset((100,)): (set([500, 1000]),  '"C" can be subtracted from "D" and "M" only'),
+    frozenset((1,)): ({5, 10}, '"I" can be subtracted from "V" and "X" only'),
+    frozenset((10,)): ({50, 100}, '"X" can be subtracted from "L" and "C" only'),
+    frozenset((100,)): ({500, 1000}, '"C" can be subtracted from "D" and "M" only'),
     frozenset((5,)): (set([]), '"V" can never be subtracted'),
     frozenset((50,)): (set([]), '"L" can never be subtracted'),
     frozenset((500,)): (set([]), '"D" can never be subtracted'),
