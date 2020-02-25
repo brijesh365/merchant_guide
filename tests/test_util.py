@@ -75,7 +75,6 @@ class UtilTest(unittest.TestCase):
         self.assertEqual('"I" can be subtracted from "V" and "X" only', context.exception.args[0])
         self.assertEqual(exception.InvalidCurrencyRule, context.exception.__class__)
 
-
     def test_set_metal_value_invalid_repeat_V(self):
         """ Tests VVI """
         with self.assertRaises(exception.InvalidCurrencyRule) as context:
