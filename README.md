@@ -39,3 +39,14 @@ glob prok Silver is 68 Credits
 glob prok Gold is 57800 Credits
 glob prok Iron is 782 Credits
 I have no idea what you are talking about
+
+# INSTRUTION
+
+Requirement:
+	python3+
+
+How to run:
+	python galaxy.py resources/input.txt
+
+How to run tests:
+	python -m unittest discover
