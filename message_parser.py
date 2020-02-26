@@ -71,10 +71,10 @@ class Parser:
     def calculate_roman_value(self, currency_codes):
         try:
             roman_values = self.currency.parse_currency(currency_codes)
-        except currency.InvalidCurrency as e:
+            net_value = util.get_net_value(roman_values)
+        except (exception.InvalidCurrency, exception.InvalidCurrencyRule) as e:
             print(e.args[0])
         else:
-            net_value = util.get_net_value(roman_values)
             print(" ".join(currency_codes), "is", net_value)
 
     def calculate_metal_cost(self, words):
